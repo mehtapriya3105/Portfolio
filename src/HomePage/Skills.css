@@ -1,0 +1,35 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-images {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.skills-images img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.skills-images img:hover {
+  transform: scale(1.1);
+}
+
+.skills-section {
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
