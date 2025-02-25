@@ -18,15 +18,14 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Movie Recommendation System",
-    description:
-      "Developed a movie recommendation system using FastAPI (Python) for the backend, ReactJS for the frontend, and MongoDB (Pymongo) for data storage.Implemented content-based filtering to personalize movie recommendations based on user preferences",
+    description:"Built a movie recommendation system with FastAPI (Python) for the backend, ReactJS for the frontend, and MongoDB (Pymongo) for data storage. Implemented content-based filtering to tailor recommendations based on user preferences.",
     image: "/movie.png",
     github : "https://github.com/mehtapriya3105/Movie-Recomendation-System.git",
   },
   {
     title: "Photo Enhance",
     description:
-      "Built a photo editing application using Java-Swing UI for the frontend and Java for the backend, integrated with a CI/CD pipeline. Implemented features including flipping, filters, image splitting, compression, and dithering.",
+     "Developed a photo editing application with a Java-Swing UI for the frontend and a Java-based backend, integrated with a CI/CD pipeline. Designed features such as flipping, filters, image splitting, compression, and dithering.",
     image: "/photo.png",
     github : "https://github.com/mehtapriya3105/Photo-Editor.git",
   },
@@ -80,7 +79,7 @@ export default function Projects() {
   return (
     <div className="p-4 m-4">
       <div>
-        <h1 className="text-center p-3 m-2">Projects</h1>
+      <h1 className="text-center p-3 m-2">PROJECTS</h1>
       </div>
       <div
         style={{
@@ -117,6 +116,8 @@ export default function Projects() {
             alignItems: "center",
             justifyContent: "center",
             margin: "0 50px", // Space between the buttons and the project content
+            borderRadius: "10px",
+            
             }}
           >
             <div
@@ -142,10 +143,11 @@ export default function Projects() {
                 flex: "0 0 85%",
                 padding: "10px",
                 background: "white",
-                borderRadius: "5px",
+                borderRadius: "15px",
                 boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-                margin : "10px",
+                margin : "20px",
                 paddingBlock: "10px",
+                border: "1px solid #ccc",
                 opacity:
                   hoveredIndex !== null && hoveredIndex !== index ? 0.5 : 1,
                 transform:
@@ -162,7 +164,7 @@ export default function Projects() {
                 
                 />
                 <p>{project.description}</p>
-                <button onClick={() => window.open(project.github, "_blank")}>
+                <button onClick={() => window.open(project.github, "_blank")} className= "btn btn-primary">
                 View on GitHub
                 </button>
               </motion.div>
